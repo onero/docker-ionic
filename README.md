@@ -1,8 +1,12 @@
+
 # Docker Ionic Development Environment
 
 <img src="https://scr.sad.supinfo.com/articles/resources/224044/6756/0.jpg"/>
 
-## Official image on dockerhub can be found here [adamino/ionic](https://hub.docker.com/r/adamino/ionic)
+## Official image on dockerhub can be found here [adamino/ionic](https://hub.docker.com/r/adamino/ionic)  
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/adamino/ionic)
+[![](https://images.microbadger.com/badges/version/adamino/ionic.svg)](https://microbadger.com/images/adamino/ionic)
+[![](https://images.microbadger.com/badges/image/adamino/ionic.svg)](https://microbadger.com/images/adamino/ionic "Get your own image badge on microbadger.com")
 
 ## This project serves a Ionic 4 ready development environment, based on openjdk 8 with Android SDK 8, Node 10 and the latest Ionic
 
