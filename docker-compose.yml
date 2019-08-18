@@ -1,0 +1,12 @@
+version: '3'
+services:
+  ionic:
+    image: adamino/ionic:latest
+    ports:
+    - "0.0.0.0:8100:8100" # ionic dev server
+    - "0.0.0.0:35729:35729" # livereload
+    volumes:
+    - ".:/app:rw" # mapping to local ionic project directory
+    #- "/dev/bus/usb:/dev/bus/usb" # usb to build to device | ATTENTION: only enable this on non-osx systems
+    command: npm run ionic-serve # add the folowing line to your package.json scripts array: "ionic-serve": "ng run app:ionic-cordova-serve --host=0.0.0.0 --port=8100 --cordova-mock",
+
