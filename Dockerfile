@@ -43,7 +43,7 @@ RUN \
     && curl --retry 3 -SLO "http://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.gz" \
     && tar -xzf "node-v$NODE_VERSION-linux-x64.tar.gz" -C /usr/local --strip-components=1 \
     && rm "node-v$NODE_VERSION-linux-x64.tar.gz" \
-    && npm install -g cordova ionic cordova-res --unsafe-perm
+    && npm install -g cordova ionic cordova-res firebase-tools --unsafe-perm
 
 # -----------------------------------------------------------------------------
 # Cleanup!
