@@ -19,16 +19,22 @@ That's why I've created this image, which serves as a complete development envir
 ## Requirements
 In order to utilize this image, you only need to have the latest version of docker installed!
 
+## Includes
+- Node: 10.16.3
+- Ionic: latest
+- cordova: latest
+- cordova-res: latest
+- firebase-tools: latest
+
+## Tagging scheme
+- ${NODE_VERSION}-  
+${BUILD_VERSION}
+- e.g. 10.16.3-3
+
 ## Usage
 
 1. Download the docker-compose file to the root of your Ionic project.
-2. Add the following line to your package.json scripts array:  
-``` 
-"scripts": {
-    "ionic-serve": "ng run app:ionic-cordova-serve --host=0.0.0.0 --port=8100 --cordova-mock", 
-}
-```
-3. Run the following command
+2. Run the following command
 
 ```
 docker compose-up
