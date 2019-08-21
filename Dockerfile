@@ -6,7 +6,7 @@ LABEL maintainer="Adam Hansen"
 # Environment setup
 # -----------------------------------------------------------------------------
 ENV GRADLE_VERSION=4.10.3
-ENV NODE_VERSION=10.15.1
+ENV NODE_VERSION=10.16.3
 RUN git config --global user.email "${GIT_EMAIL}"
 RUN git config --global user.name "${GIT_NAME}"
 
