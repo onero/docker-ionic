@@ -5,6 +5,7 @@ services:
     ports:
     - "0.0.0.0:8100:8100" # ionic dev server
     - "0.0.0.0:35729:35729" # livereload
+    - "0.0.0.0:53703:53703" # websocket
     volumes:
     - ".:/app:rw" # mapping to local ionic project directory
     #- "/dev/bus/usb:/dev/bus/usb" # usb to build to device | ATTENTION: only enable this on non-osx systems
