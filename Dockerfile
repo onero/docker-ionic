@@ -18,6 +18,8 @@ RUN \
     && tar -xzf "node-v$NODE_VERSION-linux-x64.tar.gz" -C /usr/local --strip-components=1 \
     && rm "node-v$NODE_VERSION-linux-x64.tar.gz" \
     && npm install -g \
+    # Ensure we have the latest version of npm!
+    npm \
     ionic \
     cordova \
     # Needed for building assets!
